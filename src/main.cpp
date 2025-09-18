@@ -1,7 +1,7 @@
-#include <iostream>
 #include "raylib.h"
 
 int main() {
-  std::cout << "coucou" << std::endl;
+  InitWindow(300,300, "coucou");
+
   return 0;
 }
