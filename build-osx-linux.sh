@@ -6,7 +6,7 @@ if [ -z "$CONFIGURATION" ]; then
   CONFIGURATION="debug"
 fi
 
-rm -rf bin/$CONFIGURATION/raygame
+rm -rf bin/$CONFIGURATION/rayIDE
 
 pushd build
 [[ $OSTYPE == 'darwin'* ]] && ./premake5.osx gmake2 || ./premake5 gmake2
@@ -20,4 +20,4 @@ popd
 
 cp ./compile_commands/debug_x64.json ./compile_commands.json
 
-./bin/$CONFIGURATION/raygame
+./bin/$CONFIGURATION/rayIDE

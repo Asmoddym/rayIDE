@@ -6,11 +6,11 @@ copy compile_commands/debug_x86.json compile_commands.json
 
 set configuration=%1
 
-del Bin\%configuration%\raygame.exe
+del Bin\%configuration%\rayIDE.exe
 
 echo CONFIGURATION: %configuration%
 
 call "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\MSBuild.exe" /property:Configuration=%configuration% /p:CONFIGURATION=%configuration%
 
-call Bin\%configuration%\raygame.exe
+call Bin\%configuration%\rayIDE.exe
 
